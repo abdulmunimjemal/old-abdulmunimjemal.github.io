@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="Portfolio of Abdulmunim Jundurahman Jemal, a Software Engineering Student specializing in Natural Language Learning and Web Development, Studying at Addis Ababa University."
+      content="Abdulmunim Jundurahman Jemal, a Software Engineering Student specializing in Natural Language Learning and Web Development, Studying at Addis Ababa University."
     />
     <meta
       name="keywords"
@@ -23,7 +23,7 @@
     />
     <meta
       property="og:description"
-      content="Portfolio of Abdulmunim Jundurahman Jemal, a Software Engineering Student specializing in Natural Language Learning and Web Development, Studying at Addis Ababa University."
+      content="Abdulmunim Jundurahman Jemal, a Software Engineering Student specializing in Natural Language Learning and Web Development, Studying at Addis Ababa University."
     />
     <meta property="og:image" content="img/pic_2.jpg" />
     <meta property="og:url" content="https://abdulmunim.me" />
@@ -99,6 +99,7 @@
         },
       };
     </script>
+
     <style>
       .text-gradient-my-gradient {
         background: linear-gradient(90deg, #bc3cd8, #c54b8c);
@@ -197,7 +198,7 @@
     <main class="container">
       <section
         id="intro"
-        class="container flex flex-col gap-12 text-center lg:mt-12 mb-8 lg:pt-12 md:pt-6"
+        class="birds container flex flex-col gap-12 text-center lg:mt-12 mb-8 lg:pt-12 md:pt-6"
       >
         <div>
           <img
@@ -214,11 +215,11 @@
           <p class="text-2xl text-my-grey text-opacity-55">
             I am a
             <span class="text-my-grey text-opacity-75"
-              >Software Engineer</span
+              >Software Engineering Student</span
             >
             specializing in
             <span class="text-white text-opacity-80"
-              >Natural Language Learning</span
+              >Natural Language Processing</span
             >
             and
             <span class="text-white text-opacity-80"
@@ -287,8 +288,9 @@
               >
                 <span
                   class="uppercase text-sm font-work-sans font-bold"
-                  >Github
-                  <i class="ri-github-fill text-my-grey"></i>
+                  >Github&nbsp;<i
+                    class="ri-github-fill text-my-grey"
+                  ></i>
                 </span>
               </a>
             </div>
@@ -336,7 +338,9 @@
                 sector of Ethiopia.
               </p>
               <!-- Check on GIthub button -->
-              <div class="flex wrap md:flex-end gap-4">
+              <div
+                class="flex wrap flex-col sm:flex-row md:flex-end gap-2"
+              >
                 <a
                   href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
                   rel="noopener noreferrer"
@@ -345,19 +349,21 @@
                 >
                   <span
                     class="uppercase text-sm font-work-sans font-bold"
-                    >Github
-                    <i class="ri-github-fill text-my-grey"></i>
+                    >Github&nbsp;<i
+                      class="ri-github-fill text-my-grey"
+                    ></i>
                   </span>
                 </a>
                 <!-- Live Preview Button -->
                 <a
                   href="https://afaan-oromoo-news-classification-system.streamlit.app/"
-                  class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+                  class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 sm:mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
                 >
                   <span
                     class="uppercase text-sm font-work-sans font-bold"
-                    >Preview
-                    <i class="ri-arrow-right-s-line text-my-grey"></i>
+                    >Preview&nbsp;<i
+                      class="ri-arrow-right-s-line text-my-grey"
+                    ></i>
                   </span>
                 </a>
               </div>
@@ -410,8 +416,9 @@
               >
                 <span
                   class="uppercase text-sm font-work-sans font-bold"
-                  >Github
-                  <i class="ri-github-fill text-my-grey"></i>
+                  >Github&nbsp;<i
+                    class="ri-github-fill text-my-grey"
+                  ></i>
                 </span>
               </a>
             </div>
@@ -426,7 +433,7 @@
       </section>
 
       <section id="about">
-        <div class="container flex flex-col lg:mt-12 md:mt-8">
+        <div class="birds container flex flex-col lg:mt-12 md:mt-8">
           <h2
             class="text-white text-lg font-bold md:mt-10 my-4 mb-4 lg:mt-12"
           >
@@ -526,5 +533,21 @@
     </footer>
 
     <script src="js/collapsible.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/vanta.birds.min.js"></script>
+    <script>
+      VANTA.BIRDS({
+        el: ".birds",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 100.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        backgroundColor: "#010208",
+        quantity: 2.0,
+      });
+    </script>
   </body>
 </html>
