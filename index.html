@@ -40,6 +40,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="preconnect"
@@ -251,6 +259,8 @@
         <div>
           <!-- CARD -->
           <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
             class="flex flex-col-reverse lg:flex-row lg:gap-x-8 mb-4 p-8"
           >
             <div
@@ -303,7 +313,11 @@
           <!-- END CARD -->
 
           <!-- CARD -->
-          <div class="flex flex-col lg:flex-row lg:gap-x-8 mb-4 p-8">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="flex flex-col lg:flex-row lg:gap-x-8 mb-4 p-8"
+          >
             <img
               alt="Afaan Oromoo news Classifier web interface"
               class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
@@ -339,7 +353,7 @@
               </p>
               <!-- Check on GIthub button -->
               <div
-                class="flex wrap flex-col sm:flex-row md:flex-end gap-2"
+                class="animate__bounceInLeft flex wrap flex-col sm:flex-row md:flex-end gap-2"
               >
                 <a
                   href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
@@ -373,6 +387,8 @@
 
           <!-- CARD -->
           <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
             class="flex flex-col-reverse lg:flex-row lg:gap-x-8 mb-4 p-8"
           >
             <div
@@ -442,7 +458,7 @@
           </h2>
           <div class="grid mb-6 lg:mb-16">
             <div
-              class="items-center rounded-lg shadow sm:flex bg-gray-800 border-gray-700"
+              class="items-center rounded-lg shadow sm:flex bg-gray-800 bg-opacity-40 border-gray-700"
             >
               <a href="#contact">
                 <!-- <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg border-2 border-my-red" src="img/pic_1.jpg" alt="Abdulmunim Pic"> -->
