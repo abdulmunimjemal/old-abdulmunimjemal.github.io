@@ -92,7 +92,10 @@
             M
           </h1>
         </div>
-        <ul class="hidden sm:flex flex-1 justify-end gap-8">
+        <ul
+          id="menu-list"
+          class="hidden md:flex flex-1 flex-col md:flex-row justify-end gap-8"
+        >
           <li>
             <a
               href="#about"
@@ -115,12 +118,53 @@
             >
           </li>
         </ul>
-        <div class="flex sm:hidden flex-1 justify-end">
+        <div
+          id="menu-button"
+          class="flex md:hidden flex-1 justify-end cursor-pointer"
+        >
           <i
-            class="text-3xl text-my-purple ri-menu-3-line text-my-grey"
+            class="menu-icon text-3xl text-my-purple ri-menu-3-line"
+          ></i>
+
+          <i
+            class="hidden menu-icon text-3xl text-my-purple ri-close-fill z-50"
           ></i>
         </div>
       </nav>
+      <div
+        id="overlay"
+        class="hidden fixed inset-0 bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg z-10"
+      >
+        <ul
+          id="mobile-menu"
+          class="fixed text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-lg p-8"
+        >
+          <li class="py-4 mb-6 text-3xl text-my-grey font-bold">
+            Munim
+          </li>
+          <li class="mobile-menu-item py-4 text-xl">
+            <a
+              href="#about"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >About</a
+            >
+          </li>
+          <li class="mobile-menu-item py-4 text-xl">
+            <a
+              href="#works"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Projects</a
+            >
+          </li>
+          <li class="mobile-menu-item py-4 text-xl">
+            <a
+              href="#contact"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Main -->
@@ -444,5 +488,7 @@
         &copy; 2024 Munim. All rights reserved.
       </p>
     </footer>
+
+    <script src="js/collapsible.js"></script>
   </body>
 </html>
