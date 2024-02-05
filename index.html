@@ -27,9 +27,8 @@
     />
     <meta property="og:image" content="img/pic_2.jpg" />
     <meta property="og:url" content="https://abdulmunim.me" />
-    <meta property="og:site_name" content="Abdulmunim's Porfolio" />
+    <meta property="og:site_name" content="Abdulmunim Jundurahman" />
     <meta http-equiv="content-language" content="en" />
-    <meta charset="UTF-8" />
 
     <meta property="og:type" content="website" />
     <title>Abdulmunim - Software Engineer</title>
@@ -195,16 +194,17 @@
     </header>
 
     <!-- Main -->
-    <main class="container">
+    <main class="container my-6">
       <section
         id="intro"
-        class="birds container flex flex-col gap-12 text-center lg:mt-12 mb-8 lg:pt-12 md:pt-6"
+        class="container flex flex-col gap-12 text-center lg:mt-10 mb-8 mt-12 lg:pt-12 md:pt-6"
       >
         <div>
           <img
+            loading="lazy"
             src="img/pic_2.jpg"
             alt="My Personal Selfie"
-            class="inline-flex mb-12 bject-cover border-4 border-my-red h-24 w-24 !h-48 !w-48 rounded-full"
+            class="inline-flex mb-6 object-cover border-4 border-my-red h-24 w-24 !h-48 !w-48 rounded-full"
           />
           <p
             class="text-6xl font-josefin-slab text-my-grey lg:mt-20 md:mt-10"
@@ -297,6 +297,7 @@
               </a>
             </div>
             <img
+              loading="lazy"
               alt="Amharic Spell Checker in Action on Text Editor"
               class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
               src="img/projects/amharic_spell_checker.jpg"
@@ -311,6 +312,7 @@
             class="flex flex-col lg:flex-row lg:gap-x-8 mb-4 p-8"
           >
             <img
+              loading="lazy"
               alt="Afaan Oromoo news Classifier web interface"
               class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
               src="img/projects/ao_news.png"
@@ -431,6 +433,7 @@
               </a>
             </div>
             <img
+              loading="lazy"
               alt="Taatee Landing Page Preview"
               class="max-h-[350px] border-2 p-4 border-my-red inset-2 hover:border-my-purple transition-all duration-300 ease-in-out"
               src="img/projects/taatee.png"
@@ -450,7 +453,7 @@
           </h2>
           <div class="grid mb-6 lg:mb-16">
             <div
-              class="items-center rounded-lg shadow sm:flex bg-gray-800 border-gray-700"
+              class="items-center rounded-lg shadow sm:flex bg-gray-800 border-gray-700 bg-opacity-65"
             >
               <a href="#contact">
                 <!-- <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg border-2 border-my-red" src="img/pic_1.jpg" alt="Abdulmunim Pic"> -->
@@ -541,7 +544,7 @@
     <script src="js/vanta.birds.min.js"></script>
     <script>
       VANTA.BIRDS({
-        el: ".birds",
+        el: "#intro",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
