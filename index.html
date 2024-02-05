@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Munim - Software Engineer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css"
+      integrity="sha512-i5VzKip7owqOGjb0YTF8MR2J9yBVO3FLHeazKzLp354XYTmKcqEU3UeFYUw82R8tV6JqxeATOfstCfpfPhbyEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&family=Poppins:wght@300;400;600&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="tailwind.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "my-purple": "#BC3CD8",
+              "my-red": "#C54B8C",
+              "my-blue": "#242A45",
+              "my-grey": "#E3E4E6",
+              "my-black": "#010208",
+            },
+          },
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+            "josefin-slab": ["Josefin Slab", "sans-serif"],
+            "work-sans": ["Work Sans", "sans-serif"],
+          },
+          container: {
+            center: true,
+            padding: "1rem",
+            screens: {
+              lg: "1024px",
+              xl: "1124px",
+              "2xl": "1124px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .text-gradient-my-gradient {
+        background: linear-gradient(90deg, #bc3cd8, #c54b8c);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body class="m-4 bg-my-black">
+    <!-- Header -->
+    <header>
+      <nav class="container flex">
+        <div class="flex items-center rounded">
+          <h1
+            class="text-xl font-josefin-slab text-my-red bg-my-black rounded-full px-2 py-1 border border-my-red"
+          >
+            M
+          </h1>
+        </div>
+        <ul class="hidden sm:flex flex-1 justify-end gap-8">
+          <li>
+            <a
+              href="#about"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#works"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="flex sm:hidden flex-1 justify-end">
+          <i
+            class="text-3xl text-my-purple ri-menu-3-line text-my-grey"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section
+        class="container flex flex-col gap-12 text-center lg:mt-12 md:mt-8 lg:pt-12 md:pt-6"
+      >
+        <div>
+          <img
+            src="img/pic_2.jpg"
+            class="inline-flex object-cover border-4 border-my-red h-24 w-24 !h-48 !w-48 rounded-full"
+          />
+          <p
+            class="text-6xl font-josefin-slab text-my-grey lg:mt-20 md:mt-10"
+          >
+            Hi, I am
+            <span class="text-gradient-my-gradient">Munim,</span>
+          </p>
+          <p class="text-2xl text-my-grey text-opacity-55">
+            I am a
+            <span class="text-my-grey text-opacity-75"
+              >Software Engineer</span
+            >
+            specializing in
+            <span class="text-white text-opacity-80"
+              >Natural Language Learning</span
+            >
+            and
+            <span class="text-white text-opacity-80"
+              >Web Development</span
+            >.
+          </p>
+        </div>
+        <!-- DOWN ARROW -->
+        <a
+          class="flex justify-center align-center lg:pb-12 md:pb-8"
+          href="#works"
+        >
+          <i
+            class="ri-arrow-down-wide-line text-my-grey text-5xl cursor-pointer hover:text-white hover:border-2 border-my-red rounded-full"
+          ></i>
+        </a>
+      </section>
+
+      <section class="container flex flex-col lg:mt-12 md:mt-8">
+        <h2
+          id="works"
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          Selected <span class="text-white">Works</span>
+        </h2>
+
+        <div>
+          <!-- CARD -->
+          <div class="flex flex-col md:flex-row md:gap-x-8 mb-4 p-8">
+            <div
+              class="flex flex-col md:justify-center items-center text-center sm:items-start sm:text-left mb-4"
+            >
+              <h3
+                class="uppercase text-xs font-work-sans py-4 text-my-grey"
+              >
+                Artai Spell Checker
+              </h3>
+              <p
+                class="py-2 line-heitght-2 text-light text-xl text-my-grey font-poppins text-opacity-55"
+              >
+                Say No More to
+                <span class="text-opacity-75 text-white"
+                  >unclear communications</span
+                >
+                due to
+                <span class="text-opacity-75 text-white"
+                  >spelling errors.</span
+                >
+                <br />
+                <span class="font-bold text-gradient-my-gradient"
+                  >Artai</span
+                >
+                has the solution. One of the pioneering open-source
+                spell checker for Amharic.
+              </p>
+              <!-- Check on GIthub button -->
+              <a
+                href="https://github.com/abdulmunimjemal/AmharicSpellCheckerEngine"
+                class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+              >
+                <span
+                  class="uppercase text-sm font-work-sans font-bold"
+                  >Github
+                  <i class="ri-github-fill text-my-grey"></i>
+                </span>
+              </a>
+            </div>
+            <img
+              alt="Amharic Spell Checker in Action on Text Editor"
+              class="max-h-[350px] border-2 p-4 border-my-red inset-2"
+              src="img/projects/amharic_spell_checker.jpg"
+            />
+          </div>
+          <!-- END CARD -->
+
+          <!-- CARD -->
+          <div
+            class="flex flex-reverse-col md:flex-row md:gap-x-8 mb-4 p-8"
+          >
+            <img
+              alt="Afan Oromo news Classifier web interface"
+              class="max-h-[350px] border-2 p-4 border-my-red inset-2"
+              src="img/projects/ao_news.png"
+            />
+            <div
+              class="flex flex-col md:justify-center items-center text-center sm:items-start sm:text-left mb-4"
+            >
+              <h3
+                class="uppercase text-xs font-work-sans py-4 text-my-grey"
+              >
+                Afan Oromo News Category Classifier
+              </h3>
+              <p
+                class="py-2 line-heitght-2 text-light text-xl text-my-grey font-poppins text-opacity-55"
+              >
+                A Machine Learning Model that classifies<span
+                  class="text-opacity-75 text-white font-work-sans"
+                >
+                  Afan Oromo News Text </span
+                >in to 6 categories.
+                <br />
+                <br />
+                It is a
+                <span class="font-bold text-gradient-my-gradient"
+                  >Personal project</span
+                >
+                aimed to contribute to the development
+                <span class="text-opacity-75 text-white">
+                  information retrieval</span
+                >
+                sector of Ethiopia.
+              </p>
+              <!-- Check on GIthub button -->
+              <div class="flex wrap md:flex-end gap-4">
+                <a
+                  href="https://github.com/abdulmunimjemal/afaan-oromoo-news-classification-system"
+                  class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+                >
+                  <span
+                    class="uppercase text-sm font-work-sans font-bold"
+                    >Github
+                    <i class="ri-github-fill text-my-grey"></i>
+                  </span>
+                </a>
+                <!-- Live Preview Button -->
+                <a
+                  href="https://afaan-oromoo-news-classification-system.streamlit.app/"
+                  class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+                >
+                  <span
+                    class="uppercase text-sm font-work-sans font-bold"
+                    >Live Preview
+                    <i class="ri-arrow-right-s-line text-my-grey"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- END CARD -->
+
+          <!-- CARD -->
+          <div class="flex flex-col md:flex-row md:gap-x-8 mb-4 p-8">
+            <div
+              class="flex flex-col md:justify-center items-center text-center sm:items-start sm:text-left mb-4"
+            >
+              <h3
+                class="uppercase text-xs font-work-sans py-4 text-my-grey"
+              >
+                Taatee: Event Booking System
+              </h3>
+              <p
+                class="py-2 line-heitght-2 text-light text-xl text-my-grey font-poppins text-opacity-55"
+              >
+                Solved problems related to
+                <span class="text-opacity-75 text-white"
+                  >Event Booking and Organization</span
+                >
+                for
+                <span class="text-opacity-75 text-white"
+                  >AAiT Tech Club.</span
+                >
+                <br />
+                <span class="font-bold text-gradient-my-gradient"
+                  >Taatee</span
+                >
+                mainly done as final project for Web Programming
+                Course.
+                <br />
+                <br />
+                <span class="text-opacity-75 text-white"
+                  >Technologies:</span
+                >
+                Tailwind, TypeScript, PostgreSQL, and NestJS
+              </p>
+              <!-- Check on GIthub button -->
+              <a
+                href="https://github.com/abdulmunimjemal/Taatee"
+                class="border text-my-grey text-opacity-75 text-xs border-my-grey rounded-3xl px-8 py-2 mt-8 hover:text-my-purple hover:border-my-purple hover:bg-my-red hover:text-white"
+              >
+                <span
+                  class="uppercase text-sm font-work-sans font-bold"
+                  >Github
+                  <i class="ri-github-fill text-my-grey"></i>
+                </span>
+              </a>
+            </div>
+            <img
+              alt="Taatee Landing Page Preview"
+              class="max-h-[350px] border-2 p-4 border-my-red inset-2"
+              src="img/projects/taatee.png"
+            />
+          </div>
+          <!-- END CARD -->
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container flex flex-col lg:mt-12 md:mt-8">
+          <h2
+            class="text-white text-lg font-bold md:mt-10 my-4 mb-4 lg:mt-12"
+          >
+            A LIITTLE BIT ABOUT
+            <span class="text-gradient-my-gradient">ME</span>
+          </h2>
+          <div class="grid mb-6 lg:mb-16">
+            <div
+              class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+            >
+              <a href="#">
+                <!-- <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg border-2 border-my-red" src="img/pic_1.jpg" alt="Abdulmunim Pic"> -->
+              </a>
+              <div class="p-5">
+                <h3
+                  class="text-xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  <a href="#contact"
+                    >Abdulmunim Jundurahman Jemal (21)</a
+                  >
+                </h3>
+                <span class="text-gray-500 dark:text-gray-400"
+                  >Software Engineer</span
+                >
+                <p class="mt-3 mb-4 font-light text-my-grey">
+                  Software Engineering student passionate about
+                  Natural Language Learning and Web Development.
+                  Coding isn't just a job; it's my way of solving
+                  problems and making a difference. I embrace the
+                  mantra "The only way to do great work is to love
+                  what you do."
+
+                  <br />
+                  <br />
+
+                  <span class="font-bold text-my-purple"
+                    >Fun Fact:</span
+                  >
+                  Proud member of the Survey Corps, avid AOT fan, and,
+                  like everyone else, I love cats.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="container my-8 flex flex-col justify-center items-center"
+      id="contact"
+    >
+      <hgroup class="">
+        <h2 class="text-5xl text-my-grey text-opacity-55 py-1">
+          Get <span class="text-white text-opacity-85">in Touch</span>
+        </h2>
+        <p class="text-sm text-my-grey text-opacity-55 px-4">
+          So that we can talk more about...
+        </p>
+      </hgroup>
+      <!-- Social Media Links With Remixicon -->
+      <div class="my-2 md:my-4 lg:my-6 flex gap-2">
+        <!-- email -->
+        <a
+          href="mailto:abdulmunim.jundurahman@aait.edu.et"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-mail-line text-xl md:text-3xl"></i>
+        </a>
+        <a
+          href="https://twitter.com/abdulmunimjemal"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-twitter-line text-xl md:text-3xl"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/abdulmunim-jemal/"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-linkedin-fill text-xl md:text-3xl"></i
+        ></a>
+        <a
+          href="https://www.github.com/abdulmunimJemal"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-github-line text-xl md:text-3xl"></i
+        ></a>
+        <a
+          href="https://t.me/PeacefulD"
+          class="text-my-grey text-opacity-75 hover:text-my-purple"
+          ><i class="ri-telegram-line text-xl md:text-3xl"></i>
+        </a>
+      </div>
+      <p class="text-my-grey text-opacity-75 mt-8">
+        &copy; 2024 Munim. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
