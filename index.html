@@ -67,6 +67,16 @@
       href="img/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <script src="tailwind.js"></script>
     <script>
       tailwind.config = {
@@ -138,6 +148,13 @@
           </li>
           <li>
             <a
+              href="#experience"
+              class="text-my-grey hover:text-my-purple font-poppins"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
               href="#contact"
               class="text-my-grey hover:text-my-purple font-poppins"
               >Contact</a
@@ -197,12 +214,12 @@
     <main class="container my-6">
       <section
         id="intro"
-        class="container flex flex-col gap-12 text-center lg:mt-10 mb-8 mt-12 lg:pt-12 md:pt-6"
+        class="container flex flex-col gap-12 text-center lg:mt-10 mb-6 mt-12 lg:pt-12 md:pt-6"
       >
         <div>
           <img
             loading="lazy"
-            src="img/pic_2.jpg"
+            src="img/image.png"
             alt="My Personal Selfie"
             class="inline-flex mb-6 object-cover border-4 border-my-red h-24 w-24 !h-48 !w-48 rounded-full"
           />
@@ -227,15 +244,20 @@
             >.
           </p>
         </div>
-        <!-- DOWN ARROW -->
+        <!-- DOWN ARROW --><link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        />
+        <!--
         <a
-          class="flex justify-center align-center lg:pb-12 md:pb-8"
+          class="flex justify-center items-center pb-8 md:pb-6"
           href="#works"
         >
           <i
             class="ri-arrow-down-wide-line text-my-grey text-5xl cursor-pointer hover:text-white hover:border-2 border-my-red rounded-full"
           ></i>
         </a>
+        -->
       </section>
 
       <section
@@ -442,6 +464,267 @@
           <!-- END CARD -->
         </div>
       </section>
+      <section
+        id="skills"
+        class="container flex flex-col lg:mt-12 md:mt-8"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          My <span class="text-white">Skills</span>
+        </h2>
+        <div
+          data-aos="fade-up"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="text-xl font-bold tracking-tight text-white"
+            >
+              Programming Languages
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Python, JavaScript, TypeScript, C++, C#
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Web Development
+            </h3>
+            <p class="mt-3 text-my-grey">
+              HTML, CSS, Tailwind CSS, React, Next.js
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Backend Development
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Node.js, NestJS, FastAPI, Redis, Kafka, RabbitMQ
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Databases
+            </h3>
+            <p class="mt-3 text-my-grey">
+              PostgreSQL, MySQL, MongoDB
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Tools & Technologies
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Git, Docker, Kubernetes, AWS
+            </p>
+          </div>
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Natural Language Processing
+            </h3>
+            <p class="mt-3 text-my-grey">Spacy, NLTK, Transformers</p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Machine Learning
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Scikit-learn, TensorFlow, Keras, PyTorch
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-delay="400"
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4 text-center"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Soft Skills
+            </h3>
+            <p class="mt-3 text-my-grey">
+              Teamwork, Communication, Problem-solving
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="education"
+        class="container flex flex-col lg:mt-12 md:mt-8"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          Education
+        </h2>
+        <div
+          class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+        >
+          <h3 class="text-xl font-bold tracking-tight text-white">
+            Bachelor of Science in Software Engineering
+          </h3>
+          <p class="mt-1 text-my-grey">
+            Addis Ababa University, Addis Ababa, Ethiopia
+          </p>
+          <p class="mt-1 text-my-grey">2021 - 2026</p>
+          <!-- <p class="mt-1 text-my-grey">CGPA: 3.99/4.00</p> -->
+          <p class="mt-3 text-my-grey">Relevant Coursework:</p>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-3"
+          >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Web Design and Programming</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Computer Organization and Architecture</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Fundamentals of AI</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Fundamentals of Database</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Mobile App Development</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Object Oriented Programming</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Data Structure and Algorithm Analysis</span
+            >
+            <span
+              class="bg-gray-800 text-my-grey rounded p-2 text-center"
+              >Fundamentals of NLP</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        class="container flex flex-col lg:mt-12 md:mt-8"
+      >
+        <h2
+          class="text-my-grey font-work-sans text-3xl text-opacity-55 md:my-10 my-4 lg:my-12"
+        >
+          <span class="text-gradient-my-gradient">Experience</span>
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"
+        >
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Backend AI Engineer
+            </h3>
+            <p class="mt-1 text-my-grey">Mood Me</p>
+            <ul class="mt-3 text-my-grey list-disc list-inside">
+              <li>
+                Transformed outdated backend system, reducing response
+                time by 80%, significantly improving user experience.
+              </li>
+              <li>
+                Led transition to microservice architecture in
+                FastAPI, enhancing system scalability and reducing
+                maintenance costs by 30%.
+              </li>
+              <li>
+                Implemented containerized solutions and advanced
+                transaction management, increasing system resilience
+                and uptime by 25%.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              Software AI Engineer
+            </h3>
+            <p class="mt-1 text-my-grey">Lesan AI</p>
+            <ul class="mt-3 text-my-grey list-disc list-inside">
+              <li>
+                Developed high-performance backend solutions for
+                translation system using Nest.JS, serving over 30,000
+                customers.
+              </li>
+              <li>
+                Collaborated with ML teams to design and maintain
+                RESTful API, boosting system efficiency by 50%.
+              </li>
+              <li>
+                Optimized database queries, resulting in a 40%
+                reduction in server response time and a 25% increase
+                in client satisfaction.
+              </li>
+              <li>
+                Managed critical projects for Low Resource Languages
+                backend, consistently delivering ahead of schedule.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="bg-gray-800 border-gray-700 bg-opacity-65 rounded-lg shadow p-4"
+          >
+            <h3 class="text-xl font-bold tracking-tight text-white">
+              NLP Intern
+            </h3>
+            <p class="mt-1 text-my-grey">Lesan AI</p>
+            <ul class="mt-3 text-my-grey list-disc list-inside">
+              <li>
+                Collected and processed 4 million token dataset for
+                Machine Translation (Afan Oromo - English Parallel
+                Corpus).
+              </li>
+              <li>
+                Developed language-specific cleaning, tokenization,
+                and normalization scripts, improving data quality and
+                processing speed.
+              </li>
+              <li>
+                Designed and implemented automated data preprocessing
+                pipeline, reducing manual preprocessing time by 30%.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <section id="about">
         <div class="birds container flex flex-col lg:mt-12 md:mt-8">
@@ -470,8 +753,9 @@
                   <strong>Addis Ababa University</strong>, passionate
                   about
                   <strong>Natural Language Processing</strong> and
-                  <strong>Web Development</strong>. Coding isn't just
-                  a job; it's my way of solving problems and making a
+                  <strong>Backend Engineering</strong>, especailly
+                  building scalable products. Coding isn't just a job;
+                  it's my way of solving problems and making a
                   difference. I embrace the mantra
                   <em
                     >"The only way to do great work is to love what
@@ -555,6 +839,10 @@
         backgroundColor: "#010208",
         quantity: 2.0,
       });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
